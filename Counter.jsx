@@ -2,8 +2,9 @@ import { useState } from "react";
 
 function Counter(){
         // const[count,setCount]=useState(0);
-        const[name, setName]=useState(" ");
-        console.log(name)
+        // const[name, setName]=useState(" ");
+        // console.log(name)
+         const[value, setValue]=useState(""); 
     // let handleClick=()=>{
     //     console.log(count
     //     setCount(count+1);
@@ -20,8 +21,11 @@ function Counter(){
         {/* <h2>Count:{count} </h2>
         <button onClick={()=>setCount(count+1)}>Click</button>   */}
         
-        <h3>Name: {name}</h3>
-        <input type="text" onChange={(e)=>setName(e.target.name)}/>
+
+        
+        <h5>Value: {value}</h5>
+        <input type="text" onChange={(e)=>setValue(e.target.value)}/>
+
 
         </>
     );
